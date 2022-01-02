@@ -6,7 +6,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>悟空</title>
+    <title>火龙果</title>
     <style>
         body {
             padding: 0;
@@ -38,7 +38,7 @@
 
         .text {
             display: flex;
-            color: white;
+            /*color: white;*/
             font-size: xx-large;
             align-items: center;
         }
@@ -47,16 +47,17 @@
 <script src="https://unpkg.com/vue@next"></script>
 <body>
 <div id="main-vue">
-    <h1>悟空中转,永久地址</h1>
-    <h1 style="color: red">ss.geluck.net</h1>
-    <h1>请记住本站唯一入口</h1>
-    <h1>永远不会迷失回家的路</h1>
+    <h1>火龙果中转,永久地址</h1>
+    <h1 style="color: red;font-size: 3rem;">ss.geluck.net</h1>
+    <h1>请删除以前收藏的页面</h1>
+    <h1>并收藏本页面</h1>
     <template v-for="item in urls">
-        <div :style="{ backgroundColor:item.color }" class="card" @click="open(item.url)">
+        <div :style="{ border: '4px solid '+item.color }" class="card" @click="open(item.url)">
             <img style="width: 30%;" :src="item.img_url" alt="">
             <div class="text">{{ item.name }}</div>
         </div>
     </template>
+    <h3>如果打不开页面,请刷新本页面后再次尝试</h3>
     <h5>为了防止迷路。请记住我们的永久地址</h5>
 </div>
 </body>
@@ -69,19 +70,19 @@
                     {
                         name: "点击进入-地址1",
                         img_url: './images/悟空.png',
-                        color: "#8bc34a",
+                        color: "#ff5722",
                         url: "http://ss.killallcdn.tk/"
                     },
                     {
                         name: "点击进入-地址2",
                         img_url: './images/悟空.png',
-                        color: "#2196f3",
+                        color: "#8bc34a",
                         url: "http://ss.killallcdn.gq/"
                     },
                     {
                         name: "点击进入-地址3",
                         img_url: './images/悟空.png',
-                        color: "#ff5722",
+                        color: "#2196f3",
                         url: "http://ss.killallcdn.ga/"
                     },
                 ]
