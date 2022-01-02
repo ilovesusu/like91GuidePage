@@ -28,7 +28,7 @@
 
         .card {
             width: 100%;
-            height: 120px;
+            height: 80px;
             margin-top: 12px;
             border-radius: 5px;
             display: flex;
@@ -53,7 +53,7 @@
     <h1>并收藏本页面</h1>
     <template v-for="item in urls">
         <div :style="{ border: '4px solid '+item.color }" class="card" @click="open(item.url)">
-            <img style="width: 30%;" :src="item.img_url" alt="">
+            <img style="width: 20%;" :src="item.img_url" alt="">
             <div class="text">{{ item.name }}</div>
         </div>
     </template>
